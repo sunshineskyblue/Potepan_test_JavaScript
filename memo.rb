@@ -1,6 +1,6 @@
 require "csv"
 puts "1(新規でメモを作成/既存のメモを上書き) 2(既存のメモに加筆する)"
-memo_type = gets.to_s.chomp
+memo_type = gets.chomp.to_s
 
 class Memo
   def initialize(name, content)
